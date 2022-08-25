@@ -1,0 +1,100 @@
+
+(rules PCB 2022_barami
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 104)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.8)
+      (against_preferred_direction_trace_costs 3.3)
+    )
+    (layer_rule In1.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.7)
+    )
+    (layer_rule In2.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.5)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.8)
+      (against_preferred_direction_trace_costs 2.5)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-3]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle In2.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-3]_800:400_um" "Via[0-3]_800:400_um" default
+  )
+  (via 
+    "Via[0-3]_800:400_um-kicad_default" "Via[0-3]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-3]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-3]_800:400_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu In1.Cu In2.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "LCD_CLK" "LCD_B7" "LCD_B6" "LCD_B5" "LCD_B4" +3V3 "LCD_B3" "LCD_G6"
+    "LCD_G7" "LCD_G4" "LCD_G5" "LCD_G2" "LCD_G3" "LCD_R6" "LCD_R7" "LCD_R4"
+    "LCD_R5" "LCD_R3" "LCD_VSYNC" "LCD_HSYNC" "Net-(D1-Pad2)" GND "Net-(D2-Pad2)" "Net-(D3-Pad2)"
+    "USART1_RX" "SPI1_MOSI" "USART1_TX" "SPI1_MISO" "TIM1_CH3" "SPI1_NSS" "TIM1_CH1" "SPI1_SCK"
+    "I2C2_SCL" "SAI1_FS_B" "I2C2_SDA" "SAI1_SCK_B" "GPIO_EXT3" "SAI1_SD_A" "GPIO_EXT2" "SAI1_SCK_A"
+    "GPIO_EXT1" "SAI1_FS_A" "SAI1_SD_B" "LED_ERR" "LED_RUN" "LED_ACT" "QUADSPI_BK1_NCS" "QUADSPI_BK1_IO0"
+    "QUADSPI_BK1_IO1" "QUADSPI_CLK" "QUADSPI_BK1_IO2" "QUADSPI_BK1_IO3" "LCD_BLK"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu In1.Cu In2.Cu B.Cu)
+    )
+  )
+)

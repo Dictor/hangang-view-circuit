@@ -1,0 +1,877 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title "Stock Price Display"
+Date "2022-06-09"
+Rev ""
+Comp "Jeonghyun Kim"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 5900 3000 2    50   Output ~ 0
+LCD_G2
+Text GLabel 5900 4100 2    50   Output ~ 0
+LCD_R3
+Text GLabel 5900 3200 2    50   Output ~ 0
+LCD_B3
+Text GLabel 5900 2700 2    50   Output ~ 0
+LCD_B5
+Text GLabel 5900 2800 2    50   Output ~ 0
+LCD_VSYNC
+Text GLabel 5900 2900 2    50   Output ~ 0
+LCD_R4
+Text GLabel 5900 4200 2    50   Output ~ 0
+LCD_R6
+Text GLabel 5900 4800 2    50   Output ~ 0
+PWR_PVD_IN
+Text GLabel 5900 4900 2    50   Output ~ 0
+LCD_B6
+Text GLabel 5900 5000 2    50   Output ~ 0
+LCD_B7
+NoConn ~ 5650 2400
+NoConn ~ 5650 2500
+NoConn ~ 5650 2600
+$Comp
+L MCU_Module:NUCLEO144-H743ZI U1
+U 1 1 629F37E3
+P 4350 5700
+F 0 "U1" H 4350 9681 50  0000 C CNN
+F 1 "NUCLEO144-H743ZI" H 4350 9590 50  0000 C CNN
+F 2 "Module:ST_Morpho_Connector_144_STLink" H 5200 2050 50  0001 L CNN
+F 3 "https://www.st.com/resource/en/user_manual/dm00244518-stm32-nucleo144-boards-stmicroelectronics.pdf" H 3450 6000 50  0001 C CNN
+	1    4350 5700
+	1    0    0    -1  
+$EndComp
+Text Notes 5700 2650 0    50   Italic 0
+ETH_MDIO (INTERNAL)
+NoConn ~ 5650 3100
+Wire Wire Line
+	5900 2700 5650 2700
+Wire Wire Line
+	5650 2800 5900 2800
+Wire Wire Line
+	5900 2900 5650 2900
+Wire Wire Line
+	5900 3000 5650 3000
+Wire Wire Line
+	5900 3200 5650 3200
+Text GLabel 5900 5100 2    50   Output ~ 0
+LCD_G4
+Text GLabel 5900 5200 2    50   Output ~ 0
+LCD_G5
+Text GLabel 5900 5800 2    50   Output ~ 0
+LCD_R5
+NoConn ~ 5650 5300
+NoConn ~ 5650 5400
+NoConn ~ 5650 5500
+Wire Wire Line
+	5900 4100 5650 4100
+Wire Wire Line
+	5650 4200 5900 4200
+Wire Wire Line
+	5900 4800 5650 4800
+Wire Wire Line
+	5900 4900 5650 4900
+Wire Wire Line
+	5900 5000 5650 5000
+Wire Wire Line
+	5900 5100 5650 5100
+Wire Wire Line
+	5900 5200 5650 5200
+Text Notes 5700 5350 0    50   Italic 0
+ETH_TXD0 (INTERNAL)
+NoConn ~ 5650 5900
+NoConn ~ 5650 6200
+NoConn ~ 5650 6300
+Text GLabel 5900 6400 2    50   Output ~ 0
+LCD_HSYNC
+Text GLabel 5900 6500 2    50   Output ~ 0
+LCD_G6
+NoConn ~ 5650 7100
+NoConn ~ 5650 7200
+NoConn ~ 5650 7300
+Wire Wire Line
+	5900 5800 5650 5800
+Wire Wire Line
+	5900 6400 5650 6400
+Wire Wire Line
+	5900 6500 5650 6500
+NoConn ~ 5650 8300
+NoConn ~ 5650 8400
+NoConn ~ 3050 3800
+NoConn ~ 3050 3900
+Text Notes 3000 3850 2    50   Italic 0
+RCC_OSC_IN (INTERNAL)
+Text Notes 3000 3950 2    50   Italic 0
+RCC_OSC_OUT (INTERNAL)
+NoConn ~ 3050 5200
+Text GLabel 2700 4900 0    50   Output ~ 0
+LCD_G7
+Wire Wire Line
+	3050 4900 2700 4900
+Wire Wire Line
+	3050 6800 2700 6800
+Text GLabel 2700 8600 0    50   Output ~ 0
+LCD_G3
+Text GLabel 2700 8700 0    50   Output ~ 0
+LCD_B4
+Text GLabel 2700 8900 0    50   Output ~ 0
+LCD_CLK
+Text GLabel 2700 9000 0    50   Output ~ 0
+LCD_R7
+Wire Wire Line
+	3050 8600 2700 8600
+Wire Wire Line
+	2700 8700 3050 8700
+Wire Wire Line
+	3050 8900 2700 8900
+Wire Wire Line
+	2700 9000 3050 9000
+$Comp
+L Connector_Generic:Conn_02x17_Odd_Even J1
+U 1 1 62A623F4
+P 12150 3600
+F 0 "J1" H 12200 4617 50  0000 C CNN
+F 1 "GM7123 Module" H 12200 4526 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x17_P2.54mm_Vertical" H 12150 3600 50  0001 C CNN
+F 3 "~" H 12150 3600 50  0001 C CNN
+	1    12150 3600
+	1    0    0    -1  
+$EndComp
+Text GLabel 11650 2800 0    50   Input ~ 0
+LCD_HSYNC
+Text GLabel 11650 3000 0    50   Input ~ 0
+LCD_R3
+Text GLabel 11650 3100 0    50   Input ~ 0
+LCD_R5
+Text GLabel 11650 3400 0    50   Input ~ 0
+LCD_G3
+Text GLabel 11650 3500 0    50   Input ~ 0
+LCD_G5
+Text GLabel 11650 3900 0    50   Input ~ 0
+LCD_B3
+Text GLabel 11650 4400 0    50   Input ~ 0
+LCD_B7
+Wire Wire Line
+	11950 2800 11650 2800
+Text GLabel 2700 6800 0    50   Output ~ 0
+LCD_DE
+Text GLabel 11650 3600 0    50   Input ~ 0
+LCD_G7
+Text GLabel 11650 3200 0    50   Input ~ 0
+LCD_R7
+Text GLabel 12800 2800 2    50   Input ~ 0
+LCD_VSYNC
+Text GLabel 12800 3100 2    50   Input ~ 0
+LCD_R4
+Text GLabel 12800 3200 2    50   Input ~ 0
+LCD_R6
+Text GLabel 12800 3400 2    50   Input ~ 0
+LCD_G2
+Text GLabel 12800 3500 2    50   Input ~ 0
+LCD_G4
+Text GLabel 12800 3600 2    50   Input ~ 0
+LCD_G6
+Text GLabel 12800 4400 2    50   Input ~ 0
+LCD_CLK
+Text GLabel 12800 4300 2    50   Input ~ 0
+LCD_B6
+Text GLabel 12800 4200 2    50   Input ~ 0
+LCD_B5
+Wire Wire Line
+	11950 3000 11650 3000
+Wire Wire Line
+	11650 3100 11950 3100
+Wire Wire Line
+	11950 3200 11650 3200
+Wire Wire Line
+	12800 3200 12450 3200
+Wire Wire Line
+	12800 3100 12450 3100
+Wire Wire Line
+	12800 3400 12450 3400
+Wire Wire Line
+	12450 3500 12800 3500
+Wire Wire Line
+	12800 3600 12450 3600
+Wire Wire Line
+	11950 3600 11650 3600
+Wire Wire Line
+	11650 3500 11950 3500
+Wire Wire Line
+	11950 3400 11650 3400
+Wire Wire Line
+	12800 4200 12450 4200
+Wire Wire Line
+	12450 4300 12800 4300
+Wire Wire Line
+	12800 4400 12450 4400
+Wire Wire Line
+	11950 4400 11650 4400
+Wire Wire Line
+	11950 3900 11650 3900
+Text Label 12550 3000 0    50   ~ 0
+LCD_R2
+Text Label 12550 2900 0    50   ~ 0
+LCD_R0
+Text Label 11850 2900 2    50   ~ 0
+LCD_R1
+Text Label 12550 3300 0    50   ~ 0
+LCD_G0
+Text Label 11850 3300 2    50   ~ 0
+LCD_G1
+Text Label 11850 3700 2    50   ~ 0
+LCD_B1
+Text Label 11850 3800 2    50   ~ 0
+LCD_B2
+Text Label 12550 3700 0    50   ~ 0
+BLK
+Text Label 12550 3800 0    50   ~ 0
+GND
+Text Label 12550 3900 0    50   ~ 0
+VDD
+Text Label 12550 4000 0    50   ~ 0
+GND
+NoConn ~ 12450 4100
+Text Label 11850 4100 2    50   ~ 0
+GND
+Text Label 11850 4000 2    50   ~ 0
+VDD
+Text Label 11850 4200 2    50   ~ 0
+LCD_B4
+Wire Wire Line
+	12800 2800 12450 2800
+Wire Wire Line
+	12800 3800 12800 4000
+Wire Wire Line
+	12450 3800 12800 3800
+Wire Wire Line
+	12450 4000 12800 4000
+Wire Wire Line
+	12800 4000 13350 4000
+Wire Wire Line
+	13350 4000 13350 4750
+Connection ~ 12800 4000
+$Comp
+L power:GND #PWR0101
+U 1 1 62AB618D
+P 13350 4900
+F 0 "#PWR0101" H 13350 4650 50  0001 C CNN
+F 1 "GND" H 13355 4727 50  0000 C CNN
+F 2 "" H 13350 4900 50  0001 C CNN
+F 3 "" H 13350 4900 50  0001 C CNN
+	1    13350 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11100 4750 13350 4750
+Wire Wire Line
+	11100 4100 11950 4100
+Connection ~ 13350 4750
+Wire Wire Line
+	11100 2900 11100 3300
+Wire Wire Line
+	11100 2900 11950 2900
+Connection ~ 11100 4100
+Wire Wire Line
+	11100 3300 11950 3300
+Connection ~ 11100 3300
+Wire Wire Line
+	11100 3300 11100 3700
+Wire Wire Line
+	11100 3700 11950 3700
+Connection ~ 11100 3700
+Wire Wire Line
+	11100 3700 11100 3800
+Wire Wire Line
+	11100 3800 11950 3800
+Connection ~ 11100 3800
+Wire Wire Line
+	11100 3800 11100 4100
+Wire Wire Line
+	13350 2900 13350 3000
+Wire Wire Line
+	12450 2900 13350 2900
+Connection ~ 13350 4000
+Wire Wire Line
+	12450 3000 13350 3000
+Connection ~ 13350 3000
+Wire Wire Line
+	13350 3000 13350 3300
+Wire Wire Line
+	12450 3300 13350 3300
+Connection ~ 13350 3300
+Wire Wire Line
+	13350 3300 13350 4000
+Wire Wire Line
+	13500 3900 13500 2500
+Wire Wire Line
+	13500 2500 10950 2500
+Wire Wire Line
+	10950 2500 10950 2300
+Wire Wire Line
+	12450 3900 13500 3900
+Wire Wire Line
+	10950 4000 10950 2500
+Wire Wire Line
+	10950 4000 11950 4000
+Connection ~ 10950 2500
+Text GLabel 12800 3700 2    50   Input ~ 0
+LCD_BLK
+Wire Wire Line
+	12450 3700 12800 3700
+$Comp
+L power:+3.3V #PWR0102
+U 1 1 62ACBBBF
+P 10950 2300
+F 0 "#PWR0102" H 10950 2150 50  0001 C CNN
+F 1 "+3.3V" H 10965 2473 50  0000 C CNN
+F 2 "" H 10950 2300 50  0001 C CNN
+F 3 "" H 10950 2300 50  0001 C CNN
+	1    10950 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0103
+U 1 1 62ACC5C1
+P 3850 1900
+F 0 "#PWR0103" H 3850 1750 50  0001 C CNN
+F 1 "+3.3V" H 3865 2073 50  0000 C CNN
+F 2 "" H 3850 1900 50  0001 C CNN
+F 3 "" H 3850 1900 50  0001 C CNN
+	1    3850 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 9500 3550 9750
+Wire Wire Line
+	3550 9750 3650 9750
+Wire Wire Line
+	5150 9750 5150 9500
+Wire Wire Line
+	4950 9500 4950 9750
+Connection ~ 4950 9750
+Wire Wire Line
+	4950 9750 5150 9750
+Wire Wire Line
+	4850 9500 4850 9750
+Connection ~ 4850 9750
+Wire Wire Line
+	4850 9750 4950 9750
+Wire Wire Line
+	4750 9500 4750 9750
+Connection ~ 4750 9750
+Wire Wire Line
+	4750 9750 4850 9750
+Wire Wire Line
+	4650 9500 4650 9750
+Connection ~ 4650 9750
+Wire Wire Line
+	4650 9750 4750 9750
+Wire Wire Line
+	4550 9500 4550 9750
+Connection ~ 4550 9750
+Wire Wire Line
+	4550 9750 4650 9750
+Wire Wire Line
+	4450 9500 4450 9750
+Connection ~ 4450 9750
+Wire Wire Line
+	4450 9750 4550 9750
+Wire Wire Line
+	4350 9500 4350 9750
+Connection ~ 4350 9750
+Wire Wire Line
+	4350 9750 4450 9750
+Wire Wire Line
+	4250 9500 4250 9750
+Connection ~ 4250 9750
+Wire Wire Line
+	4250 9750 4350 9750
+Wire Wire Line
+	4150 9500 4150 9750
+Connection ~ 4150 9750
+Wire Wire Line
+	4150 9750 4250 9750
+Wire Wire Line
+	4050 9500 4050 9750
+Connection ~ 4050 9750
+Wire Wire Line
+	4050 9750 4150 9750
+Wire Wire Line
+	3950 9500 3950 9750
+Connection ~ 3950 9750
+Wire Wire Line
+	3950 9750 4050 9750
+Wire Wire Line
+	3850 9500 3850 9750
+Connection ~ 3850 9750
+Wire Wire Line
+	3850 9750 3950 9750
+Wire Wire Line
+	3750 9500 3750 9750
+Connection ~ 3750 9750
+Wire Wire Line
+	3750 9750 3850 9750
+Wire Wire Line
+	3650 9500 3650 9750
+Connection ~ 3650 9750
+Wire Wire Line
+	3650 9750 3750 9750
+Wire Wire Line
+	3550 9750 3550 10000
+Connection ~ 3550 9750
+$Comp
+L power:GND #PWR0104
+U 1 1 62AF8F51
+P 3550 10000
+F 0 "#PWR0104" H 3550 9750 50  0001 C CNN
+F 1 "GND" H 3555 9827 50  0000 C CNN
+F 2 "" H 3550 10000 50  0001 C CNN
+F 3 "" H 3550 10000 50  0001 C CNN
+	1    3550 10000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x12_Odd_Even J2
+U 1 1 62A6141C
+P 12200 6400
+F 0 "J2" H 12250 7200 50  0000 C CNN
+F 1 "External IO" H 12250 7100 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x12_P2.54mm_Vertical" H 12200 6400 50  0001 C CNN
+F 3 "~" H 12200 6400 50  0001 C CNN
+	1    12200 6400
+	1    0    0    -1  
+$EndComp
+Text GLabel 2700 7800 0    50   Output ~ 0
+SAI1_SD_B
+Text GLabel 2700 7900 0    50   Output ~ 0
+SAI1_FS_A
+Text GLabel 2700 8000 0    50   Output ~ 0
+SAI1_SCK_A
+Text GLabel 2700 8100 0    50   Output ~ 0
+SAI1_SD_A
+Wire Wire Line
+	3050 7800 2700 7800
+Wire Wire Line
+	2700 7900 3050 7900
+Wire Wire Line
+	3050 8000 2700 8000
+Wire Wire Line
+	2700 8100 3050 8100
+Text GLabel 2700 5800 0    50   Output ~ 0
+I2C2_SDA
+Text GLabel 2700 5900 0    50   Output ~ 0
+I2C2_SCL
+Wire Wire Line
+	3050 5800 2700 5800
+Wire Wire Line
+	2700 5900 3050 5900
+Text GLabel 2700 6600 0    50   Output ~ 0
+SAI1_SCK_B
+Text GLabel 2700 6700 0    50   Output ~ 0
+SAI1_FS_B
+Wire Wire Line
+	3050 6600 2700 6600
+Wire Wire Line
+	2700 6700 3050 6700
+Text GLabel 2700 7700 0    50   Output ~ 0
+QUADSPI_BK1_IO2
+Wire Wire Line
+	2700 7700 3050 7700
+Text GLabel 2700 6400 0    50   Output ~ 0
+QUADSPI_BK1_IO3
+Wire Wire Line
+	3050 6400 2700 6400
+Text GLabel 5900 4300 2    50   Output ~ 0
+QUADSPI_CLK
+Wire Wire Line
+	5900 4300 5650 4300
+Text GLabel 2700 8400 0    50   Output ~ 0
+TIM1_CH1
+Wire Wire Line
+	3050 8400 2700 8400
+Text GLabel 2700 8800 0    50   Output ~ 0
+TIM1_CH3
+Wire Wire Line
+	3050 8800 2700 8800
+Text GLabel 5900 8500 2    50   Output ~ 0
+LCD_B3
+Wire Wire Line
+	5900 8500 5650 8500
+Text GLabel 5900 8600 2    50   Output ~ 0
+QUADSPI_BK1_IO0
+Text GLabel 5900 8700 2    50   Output ~ 0
+QUADSPI_BK1_IO1
+Wire Wire Line
+	5900 8600 5650 8600
+Wire Wire Line
+	5650 8700 5900 8700
+Text GLabel 2700 4700 0    50   Output ~ 0
+QUADSPI_BK1_NCS
+Wire Wire Line
+	3050 4700 2700 4700
+NoConn ~ 5650 3300
+NoConn ~ 5650 3400
+NoConn ~ 5650 3500
+NoConn ~ 5650 3600
+Text GLabel 5900 3900 2    50   Output ~ 0
+SPI1_NSS
+Wire Wire Line
+	5900 3900 5650 3900
+Text GLabel 5900 7500 2    50   Output ~ 0
+LED_ERR
+Text GLabel 5900 7600 2    50   Output ~ 0
+LED_RUN
+Text GLabel 5900 7700 2    50   Output ~ 0
+LED_ACT
+Text GLabel 5900 7800 2    50   Output ~ 0
+GPIO_EXT1
+Text GLabel 5900 7900 2    50   Output ~ 0
+GPIO_EXT2
+Text GLabel 5900 8000 2    50   Output ~ 0
+GPIO_EXT3
+Wire Wire Line
+	5900 7500 5650 7500
+Wire Wire Line
+	5650 7600 5900 7600
+Wire Wire Line
+	5900 7700 5650 7700
+Wire Wire Line
+	5650 7800 5900 7800
+Wire Wire Line
+	5900 7900 5650 7900
+Wire Wire Line
+	5650 8000 5900 8000
+Text GLabel 5900 8200 2    50   Output ~ 0
+SPI1_MOSI
+Wire Wire Line
+	5900 8200 5650 8200
+Text GLabel 2700 5000 0    50   Output ~ 0
+SPI1_MISO
+Wire Wire Line
+	3050 5000 2700 5000
+Text GLabel 5900 4400 2    50   Output ~ 0
+SPI1_SCK
+Wire Wire Line
+	5900 4400 5650 4400
+Text GLabel 5900 4700 2    50   Output ~ 0
+USART1_TX
+Wire Wire Line
+	5900 4700 5650 4700
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even U2
+U 1 1 62A648AC
+P 12200 8600
+F 0 "U2" H 12250 8917 50  0000 C CNN
+F 1 "23LC1024-E/P" H 12250 8826 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 12200 8600 50  0001 C CNN
+F 3 "~" H 12200 8600 50  0001 C CNN
+	1    12200 8600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0105
+U 1 1 62A75D0E
+P 12800 8500
+F 0 "#PWR0105" H 12800 8350 50  0001 C CNN
+F 1 "+3.3V" H 12815 8673 50  0000 C CNN
+F 2 "" H 12800 8500 50  0001 C CNN
+F 3 "" H 12800 8500 50  0001 C CNN
+	1    12800 8500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12800 8500 12500 8500
+$Comp
+L power:GND #PWR0106
+U 1 1 62A7D51F
+P 11650 8800
+F 0 "#PWR0106" H 11650 8550 50  0001 C CNN
+F 1 "GND" H 11655 8627 50  0000 C CNN
+F 2 "" H 11650 8800 50  0001 C CNN
+F 3 "" H 11650 8800 50  0001 C CNN
+	1    11650 8800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12000 8800 11650 8800
+Text GLabel 12650 8800 2    50   Output ~ 0
+QUADSPI_BK1_IO0
+Text GLabel 11850 8600 0    50   Output ~ 0
+QUADSPI_BK1_IO1
+Text GLabel 11850 8500 0    50   Output ~ 0
+QUADSPI_BK1_NCS
+Text GLabel 11850 8700 0    50   Output ~ 0
+QUADSPI_BK1_IO2
+Text GLabel 12650 8600 2    50   Output ~ 0
+QUADSPI_BK1_IO3
+Text GLabel 12650 8700 2    50   Output ~ 0
+QUADSPI_CLK
+Wire Wire Line
+	11850 8500 12000 8500
+Wire Wire Line
+	12000 8600 11850 8600
+Wire Wire Line
+	11850 8700 12000 8700
+Wire Wire Line
+	12650 8600 12500 8600
+Wire Wire Line
+	12500 8700 12650 8700
+Wire Wire Line
+	12650 8800 12500 8800
+Text GLabel 12700 6100 2    50   Output ~ 0
+GPIO_EXT1
+Text GLabel 12700 6200 2    50   Output ~ 0
+GPIO_EXT2
+Text GLabel 12700 6300 2    50   Output ~ 0
+GPIO_EXT3
+Text GLabel 11800 6900 0    50   Output ~ 0
+SPI1_MOSI
+Text GLabel 12700 6800 2    50   Output ~ 0
+USART1_TX
+Text GLabel 12700 6400 2    50   Output ~ 0
+I2C2_SDA
+Text GLabel 12700 6500 2    50   Output ~ 0
+I2C2_SCL
+Text GLabel 11800 6800 0    50   Output ~ 0
+SPI1_MISO
+Text GLabel 11800 6400 0    50   Output ~ 0
+SAI1_SCK_B
+Text GLabel 11800 6500 0    50   Output ~ 0
+SAI1_FS_B
+Text GLabel 11800 6000 0    50   Output ~ 0
+SAI1_SD_B
+Text GLabel 11800 6100 0    50   Output ~ 0
+SAI1_FS_A
+Text GLabel 11800 6200 0    50   Output ~ 0
+SAI1_SCK_A
+Text GLabel 11800 6300 0    50   Output ~ 0
+SAI1_SD_A
+Text GLabel 12700 6600 2    50   Output ~ 0
+TIM1_CH1
+Text GLabel 12700 6700 2    50   Output ~ 0
+TIM1_CH3
+Text GLabel 11800 6700 0    50   Output ~ 0
+SPI1_NSS
+Text GLabel 11800 6600 0    50   Output ~ 0
+SPI1_SCK
+Wire Wire Line
+	11800 6000 12000 6000
+Wire Wire Line
+	12000 6100 11800 6100
+Wire Wire Line
+	11800 6200 12000 6200
+Wire Wire Line
+	12000 6300 11800 6300
+Wire Wire Line
+	11800 6400 12000 6400
+Wire Wire Line
+	12000 6500 11800 6500
+Wire Wire Line
+	11800 6600 12000 6600
+Wire Wire Line
+	12000 6700 11800 6700
+Wire Wire Line
+	11800 6800 12000 6800
+Wire Wire Line
+	12000 6900 11800 6900
+Wire Wire Line
+	12500 6800 12700 6800
+Wire Wire Line
+	12700 6700 12500 6700
+Wire Wire Line
+	12500 6600 12700 6600
+Wire Wire Line
+	12700 6500 12500 6500
+Wire Wire Line
+	12700 6400 12500 6400
+Wire Wire Line
+	12700 6300 12500 6300
+Wire Wire Line
+	12500 6200 12700 6200
+Wire Wire Line
+	12700 6100 12500 6100
+Text GLabel 5900 5600 2    50   Output ~ 0
+USART1_RX
+Wire Wire Line
+	5900 5600 5650 5600
+Text GLabel 12700 6900 2    50   Output ~ 0
+USART1_RX
+Wire Wire Line
+	12700 6900 12500 6900
+Wire Wire Line
+	12000 7000 12000 7150
+Wire Wire Line
+	12000 7150 12500 7150
+Wire Wire Line
+	12500 7150 12500 7000
+Wire Wire Line
+	12000 5900 12000 5750
+$Comp
+L power:+3.3V #PWR0107
+U 1 1 62CB93BB
+P 12800 5750
+F 0 "#PWR0107" H 12800 5600 50  0001 C CNN
+F 1 "+3.3V" H 12815 5923 50  0000 C CNN
+F 2 "" H 12800 5750 50  0001 C CNN
+F 3 "" H 12800 5750 50  0001 C CNN
+	1    12800 5750
+	1    0    0    -1  
+$EndComp
+Connection ~ 12000 7150
+Wire Wire Line
+	12000 7150 11650 7150
+$Comp
+L power:GND #PWR0108
+U 1 1 62CB9B76
+P 11650 7150
+F 0 "#PWR0108" H 11650 6900 50  0001 C CNN
+F 1 "GND" H 11655 6977 50  0000 C CNN
+F 2 "" H 11650 7150 50  0001 C CNN
+F 3 "" H 11650 7150 50  0001 C CNN
+	1    11650 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12000 5750 12500 5750
+Wire Wire Line
+	12500 5900 12500 5750
+Connection ~ 12500 5750
+Wire Wire Line
+	12500 5750 12800 5750
+NoConn ~ 12500 6000
+$Comp
+L Device:LED D1
+U 1 1 62A8A7BF
+P 8150 6050
+F 0 "D1" H 8143 6267 50  0000 C CNN
+F 1 "LED_RUN" H 8143 6176 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 8150 6050 50  0001 C CNN
+F 3 "~" H 8150 6050 50  0001 C CNN
+	1    8150 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 62A9EEE8
+P 8150 6400
+F 0 "D2" H 8143 6617 50  0000 C CNN
+F 1 "LED_ACT" H 8143 6526 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 8150 6400 50  0001 C CNN
+F 3 "~" H 8150 6400 50  0001 C CNN
+	1    8150 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 62AA8EB4
+P 8150 6750
+F 0 "D3" H 8143 6967 50  0000 C CNN
+F 1 "LED_ERR" H 8143 6876 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 8150 6750 50  0001 C CNN
+F 3 "~" H 8150 6750 50  0001 C CNN
+	1    8150 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 6050 7750 6400
+Wire Wire Line
+	7750 6400 8000 6400
+Wire Wire Line
+	7750 6400 7750 6750
+Wire Wire Line
+	7750 6750 8000 6750
+Connection ~ 7750 6400
+Wire Wire Line
+	7750 6750 7750 7000
+Connection ~ 7750 6750
+$Comp
+L power:GND #PWR0109
+U 1 1 62B06301
+P 7750 7000
+F 0 "#PWR0109" H 7750 6750 50  0001 C CNN
+F 1 "GND" H 7755 6827 50  0000 C CNN
+F 2 "" H 7750 7000 50  0001 C CNN
+F 3 "" H 7750 7000 50  0001 C CNN
+	1    7750 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 62B07066
+P 8750 6050
+F 0 "R1" V 8543 6050 50  0000 C CNN
+F 1 "100R" V 8634 6050 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 8680 6050 50  0001 C CNN
+F 3 "~" H 8750 6050 50  0001 C CNN
+	1    8750 6050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 62B33B0A
+P 8750 6400
+F 0 "R2" V 8543 6400 50  0000 C CNN
+F 1 "100R" V 8634 6400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 8680 6400 50  0001 C CNN
+F 3 "~" H 8750 6400 50  0001 C CNN
+	1    8750 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 62B3E1C4
+P 8750 6750
+F 0 "R3" V 8543 6750 50  0000 C CNN
+F 1 "100R" V 8634 6750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 8680 6750 50  0001 C CNN
+F 3 "~" H 8750 6750 50  0001 C CNN
+	1    8750 6750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8600 6050 8300 6050
+Wire Wire Line
+	8600 6400 8300 6400
+Wire Wire Line
+	8600 6750 8300 6750
+Text GLabel 9300 6050 2    50   Output ~ 0
+LED_ERR
+Text GLabel 9300 6400 2    50   Output ~ 0
+LED_RUN
+Text GLabel 9300 6750 2    50   Output ~ 0
+LED_ACT
+Wire Wire Line
+	9300 6050 8900 6050
+Wire Wire Line
+	8900 6400 9300 6400
+Wire Wire Line
+	9300 6750 8900 6750
+Wire Wire Line
+	7750 6050 8000 6050
+Wire Wire Line
+	11100 4100 11100 4300
+Text Label 11850 4300 2    50   ~ 0
+LCD_B0
+Text GLabel 11650 4200 0    50   Input ~ 0
+LCD_B4
+Wire Wire Line
+	11650 4200 11950 4200
+Text GLabel 5900 3700 2    50   Output ~ 0
+LCD_BLK
+Wire Wire Line
+	5900 3700 5650 3700
+Wire Wire Line
+	11100 4300 11950 4300
+Connection ~ 11100 4300
+Wire Wire Line
+	11100 4300 11100 4750
+Wire Wire Line
+	13350 4750 13350 4900
+$EndSCHEMATC
